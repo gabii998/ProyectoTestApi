@@ -1,119 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".ui.pokemonDetail.PokemonDetailFragment">
-
-    <TextView
-        android:id="@+id/pokemonName"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hello"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="@dimen/title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:context=".ui.pokemonDetail.PokemonDetailFragment">
 
-    <TextView
-        android:id="@+id/widthTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/weigth"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pokemonName" />
+            <TextView
+                android:id="@+id/pokemonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hello"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/width"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/widthTittle" />
+            <TextView
+                android:id="@+id/widthTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/weigth"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pokemonName" />
 
-    <TextView
-        android:id="@+id/heightTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/heigth"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/width" />
+            <TextView
+                android:id="@+id/width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widthTittle" />
 
-    <TextView
-        android:id="@+id/height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/heightTittle" />
+            <TextView
+                android:id="@+id/heightTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heigth"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/width" />
 
-    <TextView
-        android:id="@+id/abilitiesTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/abilities"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/height" />
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heightTittle" />
 
-    <TextView
-        android:id="@+id/abilities"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/abilitiesTittle" />
+            <TextView
+                android:id="@+id/abilitiesTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abilities"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/height" />
 
-    <TextView
-        android:id="@+id/statsTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stats"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/abilities" />
+            <TextView
+                android:id="@+id/abilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/abilitiesTittle" />
 
-    <TextView
-        android:id="@+id/stats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/statsTittle" />
+            <TextView
+                android:id="@+id/statsTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stats"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/abilities" />
 
-    <TextView
-        android:id="@+id/formsTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/forms"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/stats" />
+            <TextView
+                android:id="@+id/stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/statsTittle" />
 
-    <TextView
-        android:id="@+id/forms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formsTittle" />
+            <TextView
+                android:id="@+id/formsTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forms"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stats" />
 
-    <TextView
-        android:id="@+id/typeTittle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/types"
-        style="@style/Subtittle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/forms" />
+            <TextView
+                android:id="@+id/forms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/formsTittle" />
 
-    <TextView
-        android:id="@+id/types"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/typeTittle" />
+            <TextView
+                android:id="@+id/typeTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/types"
+                style="@style/Subtittle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forms" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/types"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/typeTittle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
