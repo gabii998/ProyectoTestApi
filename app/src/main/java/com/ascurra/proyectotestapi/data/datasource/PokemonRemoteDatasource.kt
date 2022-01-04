@@ -4,8 +4,9 @@ import com.ascurra.proyectotestapi.domain.model.PokemonDetail
 import com.ascurra.proyectotestapi.domain.model.ServerResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class PokemonRemoteDatasource constructor(private val api:PokemonRemoteApi){
+class PokemonRemoteDatasource @Inject constructor(private val api:PokemonRemoteApi){
     suspend fun listPokemon(offset:Int,limit:Int):ServerResponse?{
         return withContext(Dispatchers.IO){
             val response = api.list(offset,limit)
