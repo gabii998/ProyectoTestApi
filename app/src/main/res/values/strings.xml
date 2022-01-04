@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Proyecto Test Api</string>
+    <string name="weigth">Weigth</string>
+    <string name="heigth">Heigth</string>
+    <string name="abilities">Abilities</string>
+    <string name="stats">Stats</string>
+    <string name="forms">Forms</string>
+    <string name="types">Types</string>
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyecto Test Api</string>
+    <string name="weigth">Peso</string>
+    <string name="heigth">Altura</string>
+    <string name="abilities">Habilidades</string>
+    <string name="stats">Estadisticas</string>
+    <string name="forms">Formas</string>
+    <string name="types">Tipo</string>
+</resources>

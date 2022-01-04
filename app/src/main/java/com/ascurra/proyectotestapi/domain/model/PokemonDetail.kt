@@ -6,5 +6,9 @@ data class PokemonDetail(
     val gameIndices:List<GameIndex>,
     val height:Int,
     val id:Int,
-    val weight:Int
+    val name:String,
+    val types:List<Type>,
+    val weight:Int,
+    val abilities:List<AbilityWrapper>,
+    val stats:List<Stat>
 )

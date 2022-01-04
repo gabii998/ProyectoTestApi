@@ -2,5 +2,6 @@ package com.ascurra.proyectotestapi.domain.model
 
 data class AbilityWrapper(
     val isHidden:Boolean,
-    val slot:Int
+    val slot:Int,
+    val ability: Ability
 )
